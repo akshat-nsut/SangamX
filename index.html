@@ -122,82 +122,104 @@ nav{
 .dropdown-menu:hover .menu-btn {
    background-color: lightgrey;
 }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(58, 56, 56);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 </style>
 </head>
 <body>
 
   <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey" style="display:flex; flex-direction:row; justify-content:space-around;">
-    <div class="w3-col s2">
-      <a href="#" class="w3-button w3-block">Home</a>
-    </div>
-    <div class="w3-col s2">
-      <a href="#plans" class="w3-button w3-block">SangamX Service</a>
-    </div>
-    <div class="w3-col s2">
-      <a href="#about" class="w3-button w3-block">About Us</a>
-    </div>
-    <div class="w3-col s2">
-      <a href="#contact" class="w3-button w3-block">Knowledge Base</a>
-    </div>
-    <div class="w3-col s2">
-      <a href="#new" class="w3-button w3-block">Contact Us</a>
-    </div>
-    <div class="dropdown-menu">
-      <div class="w3-col">
-        <div class="w3-button w3-block">Participant Login</div>
-      </div>
-      <div class="menu-content">
-      <a class="links-hidden" href="n2.html">NGOs</a>
-      <a class="links-hidden" href="n2.html">Social Enterprise</a>
-      <a class="links-hidden" href="n2.html">Employee</a>
-      <a class="links-hidden" href="n2.html">Investor</a>
-      </div>
-    </div>
+  
+  <div class="topnav" id="myTopnav">
+    <a href="#" >Home</a>
+    <a href="#plans">SangamX Service</a>
+    <a href="#about" >About Us</a>
+    <a href="#contact">Knowledge Base</a>
+    <a href="#new">Contact Us</a>
+    <a href="n2.html">Participant Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-</div>
-
+  
+  
   <div
 class="w3-content"
  style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"  >
  
  
-<!-- <div class="w3-panel">
-  <h1><b><img src="images/Picture1.png" style="width: 80px; height: 55px" /></b></h1>
-
-</div>   -->
 
 
-<!-- <div >
-  <img src="images/tobeusedsangamgiffy.gif" alt="sangamx animation" style="width:100% ; height: 300px;">
-</div>  -->
-<div
-class="w3-content"
-style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"
->
-<div class="w3-panel">
-  <h1><b><img src="images/Picture1.png" style="width: 80px; height: 55px" /></b></h1>
-
-</div> 
-
-<div class="slideshow-container" style="width: 100%;">
+<div class="slideshow-container" style="width: 100%; margin: auto; padding:25px;">
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="images/tobeusedsangamgiffy.gif" style="width: 100%; height: 400px">
+    <img src="images/use.gif" style="width: 100%; height: 350px;">
     <!-- <div class="text">Caption Text</div> -->
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="images/ngo.jpg" style="width: 100%; height: 400px">
+    <img src="images/ngo.jpg" style="width: 100%; height: 350px">
     <!-- <div class="text">Caption Two</div> -->
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="images/ngo2.jfif" style="width: 100%; height: 400px">
+    <img src="images/ngo2.jfif" style="width: 100%; height: 350px">
     <!-- <div class="text">Caption Three</div> -->
   </div>
   
@@ -213,106 +235,27 @@ style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"
     <span class="dot" onclick="currentSlide(3)"></span> 
   </div>
 
-<!-- <div style="margin:auto ;">
-  <video  autoplay loop>
-    <source src="images/WhatsApp Video 2022-09-27 at 17.18.06.mp4" type="video/mp4" />
-    <source src="images/WhatsApp Video 2022-09-27 at 17.18.06.mp4" type="video/ogg" />
-    Your browser does not support the video element.
- </video>
-</div> -->
-
-
-
-
-<!-- Slideshow -->
-<!-- <div class="w3-container">
-  <div class="w3-display-container mySlides">
-    <video width="600" height="500" autoplay loop>
-      <source src="images/WhatsApp Video 2022-09-27 at 17.18.06.mp4" type="video/mp4" />
-      <source src="images/WhatsApp Video 2022-09-27 at 17.18.06.mp4" type="video/ogg" />
-      Your browser does not support the video element.
-   </video>
-    <div class="w3-display-topleft w3-container w3-padding-32">
-      <span class="w3-white w3-padding-large w3-animate-bottom">Lorem ipsum</span>
-    </div>
-  </div> -->
-  <!-- <div class="w3-display-container mySlides">
-    <img src="/w3images/workbench.jpg" style="width:100%">
-    <div class="w3-display-middle w3-container w3-padding-32">
-      <span class="w3-white w3-padding-large w3-animate-bottom">Klorim tipsum</span>
-    </div>
-  </div>
-  <div class="w3-display-container mySlides">
-    <img src="/w3images/sound.jpg" style="width:100%">
-    <div class="w3-display-topright w3-container w3-padding-32">
-      <span class="w3-white w3-padding-large w3-animate-bottom">Blorum pipsum</span>
-    </div>
-  </div> -->
-
-  <!-- Slideshow next/previous buttons -->
-  <!-- <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-    <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
-  
-    <div class="w3-center">
-      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    </div>
-  </div>
-</div> -->
-
-
-<!-- <div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="images/Picture1.png" style="width: 1000px; height: 400px">
-    <div class="text">Caption Text</div> -->
-  <!-- </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="images/ngo.jpg" style="width: 1000px; height: 400px"> -->
-    <!-- <div class="text">Caption Two</div> -->
-  <!-- </div>
-  
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="images/ngo2.jfif" style="width: 1000px; height: 400px"> -->
-    <!-- <div class="text">Caption Three</div> -->
-  <!-- </div>
-  
-  <a class="prev" onclick="plusSlides(-1)"></a>
-  <a class="next" onclick="plusSlides(1)"></a>
-  
-  </div>
-  <br>
-  
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div> --> 
 
 <!-- Grid -->
-<div class="w3-row w3-container" >
+<!-- <div class="w3-row w3-container" > -->
   <div class="w3-center w3-padding-64">
     <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Why SangamX</span>
   </div>
 
-  <div class="w3-col l3 m8 w3-light-grey w3-container w3-padding-16" style="width:267px; height:300px;" >
+
+<div style= "background-color: rgb(255, 255, 255); height: auto; width: 100%;  display: flex;  padding: 15px; justify-content: center; flex-wrap: wrap;">
+  <div class="w3-col l3 m8 w3-light-grey w3-container w3-padding-16" style="width:267px; height:auto;overflow: visible; display: inline-block; " >
     <!-- <h3>Design</h3>-->
     <p>Despite annual global contributions of $2.5 Trillion on social organizations, despite having nearly 10% of the private sector workforce deployed in the non-profit sector, we have not materially moved the needle on it’s social impact
     </p>
   </div>
-  <div class="w3-col l3 m8 w3-grey w3-container w3-padding-16" style="width:267px; height:300px;" >
+  <div class="w3-col l3 m8 w3-grey w3-container w3-padding-16" style="width:267px; height:auto;overflow: visible;display: inline-block; " >
     
     <!--<h3>Branding</h3>-->
     <p>The income gap between richest-poorest household is largest in 50 years. About 10% of world population still lives in extreme poverty today. Almost 75% of earth's surface has been altered threatning 1 million animal species to extinction </p>
   </div>
 
-  <div class="w3-col l3 m8 w3-dark-grey w3-container w3-padding-19" style="width:267px; height:300px;">
+  <div class="w3-col l3 m8 w3-dark-grey w3-container w3-padding-19" style="width:267px; height:auto;overflow: visible; display: inline-block;">
     <!--<h3>Consultation</h3>-->
     <p>We are living in a world where the traditional boundaries between the three sectors are no longer
       distinct. A for-benefit economy or fourth sector is emerging where these organizations do not depend only on philanthropy, and generate a substantial proportion of
@@ -320,94 +263,19 @@ style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"
       </p>
   </div>
 
-  <div class="w3-col l3 m6 w3-black w3-container w3-padding-16" style="width:267px; height:300px;">
+  <div class="w3-col l3 m6 w3-black w3-container w3-padding-16" style="width:267px; height:auto;overflow: visible;display: inline-block; ">
     <!--<h3>Promises</h3>-->
     <p>We believe that incorporating the good of free-market mechanisms and creating a similar ecosystem appropriate for NPOs and Social Enterprises, will multiply the delivered impact</p>
   </div>
 
-</div>
+</div></div>
 
-<!-- <div class="w3-row-padding" id="plans">
-  <div class="w3-center w3-padding-64">
-    <h3>SangamX Services</h3>
-    <p style="text-align:left">In line with this concept, and our vision,  SangamX is created  as a platform that brings together a collection of capabilities needed to bring that free-market like effectiveness to the entire social impact sector – a markets mechanism we are calling Societal Markets.. a la Capital Markets, which will help magnify the impact per dollar per societal project. </p>
-  </div>
-  <div class="w3-col 26 m16 w3-dark-grey w3-container w3-padding-16" style="width:600spx; height:200px;" > -->
-    <!-- <h3>Design</h3>-->
-    <!-- <p>Working in  tandem with a Social Stock Exchange, our Societal Markets Framework creates a collection of capabilities needed to bring the societal free markets mechanism to life – some of these will be owned and operated by SangamX, while some will be owned/ operated by partners.
 
-      We will leverage and connect existing mechanisms such as Social Stock Exchanges, match-making platforms, crowd-funding platforms etc.
-      
-      In doing so, we will role model a socially responsible AND financially sustainable organization, which establishes that financial return is only a means to create social returns, never the other way.
-      
-    </p></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="w3-col 26 m16 w3-dark-grey w3-container w3-padding-16" style="width:600spx; height:150px;" >
-    <p>We will leverage and connect existing mechanisms such as Social Stock Exchanges, match-making platforms, crowd-funding platforms etc.
-
-      Where the capabilities don’t exist, we will build to fill the gaps
-      
-      In doing so, we will role model a socially responsible AND financially sustainable organization, which establishes that financial return is only a means to create social returns, never the other way.
-      </p>
-  </div>
-  <br><p></p><br><br> -->
 
   
     
 
-  <!-- Grid -->
-  <!-- class="w3-row-padding" id="about">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Team</span>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4"  style="width:340px;">
-        <img src="images/asm.png" alt="Antony Stephen" style="width: 340px">
-        <div class="w3-container" style="width:308px;height:450px">
-          <h3>Antony Stephen</h3>
-          <p class="w3-opacity">Advisor
-          </p>
-          <p style="text-align: justify;" class="scroll">Antony is currently working as the CEO of Barclays Partner Finance and prior to this, he was the CEO for Amazon’s European Payments business.<br> In his 25 plus years of global experience in the Financial Services industry, he has worked for large organizations such as at JP Morgan Chase, Capital One, MasterCard and Citibank.<br><br>
-
-            Antony has been committed to social causes especially involving children’s wellbeing and education for the past three decades.<br> During this time, Antony and his family have built a school, an orphanage and have established multiple educational trusts to sponsor education for the underprivileged children.</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="images/btm.jpg" alt="Babu Thiagarajan" style="width: 340px; height: 355px" >
-        <div class="w3-container">
-          <h3>Babu Thiagarajan          </h3>
-          <p class="w3-opacity">Founder Director
-          </p>
-          </p>
-          <p>Babu has been in the Technology industry for nearly 28 years now playing a variety of roles to build technology led businesses, or delivering technology platforms and solutions for Banking and Financial Services organisations such as Fidelity, Standard Chartered etc. Based in Gurgaon, Babu is currently the Global Head of Technology for a collection of Post-Trade processing platforms at OSTTRA. <br>
-
-            Babu’s engagement in the social sector is inspired by the impact created by his grand-father and father’s efforts in their communities. He has spent the last 2 years studying and curating mechanisms that could make a material shift to solving societies problems.
-            </p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="images/sbm.jpg" alt="Susheyl Balabaskaran" style="width:100%">
-        <div class="w3-container">
-          <h3>Susheyl Balabaskaran</h3>
-          <p class="w3-opacity">Founder Director
-          </p>
-          <p>A business leader with over 27 years of experience in the automotive industry. After helping build the strategic purchasing, supply chain teams for entities across Asia, Susheyl moved to Germany in 2018 and is currently the Global Head-Advanced Supply Chain group for Visteon Corp. 
-            He has been engaged in social causes for over a decade in supporting education for underprivileged children, on-the-ground volunteering during the Chennai floods and more recently raised funds to design, manufacture and distribute over 1000+ face shields to remote villages in South India. Over the last 2 years, he has been actively researching and mobilizing resources to build a sustainable platform that can be an enabler to multiply social impact. 
-            </p>
-            <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>  --> 
+  
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="plans">
@@ -503,24 +371,7 @@ style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"
   
 
 
-<!-- <div class="w3-row-padding" id="contact">
-  <div class="w3-center w3-padding-64">
-    <h3>Knowledge base</h3>
-    
-  </div>
-  <div class="w3-col 26 m16 w3-dark-grey w3-container w3-padding-16" style="height:180px;width: 1200px;" > -->
-    <!-- <h3>Design</h3>-->
-    <!-- <p>1) SSG Technical Group Report  
-      2) SDG Progress Report <br>
-      3) Working Group Report <br>
-      4) HBR – A New Approach to Funding Social Enterprises <br>
-      5) The Role of Market Mechanism in Enhancing Human Development<br>
-      
-      
-    </p> -->
 
-    
-    
 
     <!-- Contact -->
     <br><br><br>
@@ -554,34 +405,7 @@ style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"
 
       
 
-    <!-- <div class="w3-row-padding" id="new">
-      <div class="w3-center w3-padding-64" style="color: w3-black;">
-        <h3 style="color:black"> Contact Us:</h3>
-        
-      </div>
-  <div class="w3-col 26 m16 w3-dark-grey w3-container w3-padding-16" style="height:260px;width: 1200px">
-     <h3>Design</h3>-->
-    <!-- <p>If you want to partner :
-
-<br>
-<br>
-<br>
-
-      If you want our services :
-<br>
-<br>
-<br>
-      
-      If you need information :
-      
-      
-<br>
-<br>
-<br>
-      
-</p>
     
-<br><br><br> --> 
 <div style="display:flex; width: 100%; justify-content: center;">
  <a href="#" class="w3-button w3-black w3-margin" style="text-align: ;center"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </div>
@@ -589,6 +413,18 @@ style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"
 
 
 <script>
+
+
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  
 
 
 let slideIndex = 0;
