@@ -129,13 +129,13 @@ body {
   
   .topnav {
     overflow: hidden;
-    background-color: rgb(58, 56, 56);
+    background-color:rgb(220,220,220);
   }
   
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -143,12 +143,12 @@ body {
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(237,236,236);
     color: black;
   }
   
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #000000;
     color: white;
   }
   
@@ -177,9 +177,12 @@ body {
       text-align: left;
     }
   }
+
+  
+
 </style>
 </head>
-<body>
+<body style="background-color: #edecec;">
 
   <!-- Links (sit on top) -->
   
@@ -195,33 +198,38 @@ body {
     </a>
   </div>
   
-  
-  <div
+   <img style="position: relative; width:100%; height: auto; " src="images/banner.gif" alt=""> 
+
+<!-- <div style="background-image:url(images/banner.gif); display: flex; flex-wrap: wrap; height: 60vh; background-size:cover; background-position:left;">  </div> -->
+
+  <!-- <div
 class="w3-content"
  style="max-width: 1100px; margin-top: 80px; margin-bottom: 80px"  >
  
- 
+ <section >
+  <img style="object-fit: fill; width: 100%;" src="images/banner.gif" alt="">
+</section> -->
 
 
-<div class="slideshow-container" style="width: 100%; margin: auto; padding:25px;">
+<!-- <div class="slideshow-container" style="width: 100%; margin: auto; padding:25px;">
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="images/use.gif" style="width: 100%; height: 350px;">
-    <!-- <div class="text">Caption Text</div> -->
+    
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="images/ngo.jpg" style="width: 100%; height: 350px">
-    <!-- <div class="text">Caption Two</div> -->
-  </div>
+    <img src="images/1000_F_330499336_nuQWBSjq0ehkfMwfavbkE7PwMkXFi8rM.jpg" style="width: 100%; height: 350px">
+     <div class="text">Caption Two</div> -->
+  <!-- </div>
   
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="images/ngo2.jfif" style="width: 100%; height: 350px">
+    <img src="images/ngo2.jfif" style="width: 100%; height: 350px"> -->
     <!-- <div class="text">Caption Three</div> -->
-  </div>
+  <!-- </div>
   
   <a class="prev" onclick="plusSlides(-1)"></a>
   <a class="next" onclick="plusSlides(1)"></a>
@@ -233,7 +241,7 @@ class="w3-content"
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
+  </div> --> 
 
 
 <!-- Grid -->
@@ -243,161 +251,164 @@ class="w3-content"
   </div>
 
 
-<div style= "background-color: rgb(255, 255, 255); height: auto; width: 100%;  display: flex;  padding: 15px; justify-content: center; flex-wrap: wrap;">
-  <div class="w3-col l3 m8 w3-light-grey w3-container w3-padding-16" style="width:267px; height:auto;overflow: visible; display: inline-block; " >
+<div style= "background-color: background-color: #edecec; height: auto; width: 100%;  display: flex;  padding: 15px; justify-content: center; flex-wrap: wrap;">
+  <div  style="width:267px; height:auto;overflow: visible; display: inline-block;background-color: rgb(160, 160, 160); padding: 16px;display: inline-block; " >
     <!-- <h3>Design</h3>-->
-    <p>Despite annual global contributions of $2.5 Trillion on social organizations, despite having nearly 10% of the private sector workforce deployed in the non-profit sector, we have not materially moved the needle on it’s social impact
+    <p style="justify-content:left ; background-color: rgb(160, 160, 160); ">Despite annual global contributions of $2.5 Trillion on social organizations, despite having nearly 10% of the private sector workforce deployed in the non-profit sector, we have not materially moved the needle on it’s social impact
     </p>
   </div>
-  <div class="w3-col l3 m8 w3-grey w3-container w3-padding-16" style="width:267px; height:auto;overflow: visible;display: inline-block; " >
+  <div  style="width:267px; height:auto;overflow: visible; display: inline-block;background-color: rgb(130, 130, 130); padding: 16px;display: inline-block; " >
     
     <!--<h3>Branding</h3>-->
-    <p>The income gap between richest-poorest household is largest in 50 years. About 10% of world population still lives in extreme poverty today. Almost 75% of earth's surface has been altered threatning 1 million animal species to extinction </p>
+    <p style="background-color:rgb(130, 130, 130);">The income gap between richest-poorest household is largest in 50 years. About 10% of world population still lives in extreme poverty today. Almost 75% of earth's surface has been altered threatning 1 million animal species to extinction </p>
   </div>
 
-  <div class="w3-col l3 m8 w3-dark-grey w3-container w3-padding-19" style="width:267px; height:auto;overflow: visible; display: inline-block;">
+  <div style="width:267px; height:auto;overflow: visible; display: inline-block;background-color: rgb(100, 100,100); padding: 16px;  display: inline-block;">
     <!--<h3>Consultation</h3>-->
-    <p>We are living in a world where the traditional boundaries between the three sectors are no longer
+    <p style="background-color: rgb(100, 100,100); color: #ffffff;">We are living in a world where the traditional boundaries between the three sectors are no longer
       distinct. A for-benefit economy or fourth sector is emerging where these organizations do not depend only on philanthropy, and generate a substantial proportion of
       their resources from commercial activities.
       </p>
   </div>
 
-  <div class="w3-col l3 m6 w3-black w3-container w3-padding-16" style="width:267px; height:auto;overflow: visible;display: inline-block; ">
+  <div style="width:267px; height:auto;overflow: visible; display: inline-block;background-color: rgb(70, 70, 70); padding: 16px;  display: inline-block;">
     <!--<h3>Promises</h3>-->
-    <p>We believe that incorporating the good of free-market mechanisms and creating a similar ecosystem appropriate for NPOs and Social Enterprises, will multiply the delivered impact</p>
+    <p style="background-color:rgb(70, 70, 70);color: #ffffff;">We believe that incorporating the good of free-market mechanisms and creating a similar ecosystem appropriate for NPOs and Social Enterprises, will multiply the delivered impact</p>
   </div>
 
 </div></div>
-
-
-
   
-    
+    <br>
 
-  
 
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="plans">
-    <h2 class="w3-wide">SangamX Services</h2>
+
+  <!-- SangamX Service -->
+  <section style="padding-left: 45px; padding-right: 45px; background-color: rgb(220,220,220);" >
+    <br>
+  <div style="max-width:100% ; justify-content: center; text-align: center;" id="plans">
+    <div style="justify-content: center;"><img src="images/logo-secondarymark (1).png" alt=""></div>
+    <h2 class="w3-wide" style="justify-content:center ;">SangamX Services</h2>
     <!-- <p class="w3-opacity"><i>We love music</i></p> -->
-    <p style="text-align: left;">In line with this concept, and our vision,  SangamX is created  as a platform that brings together a collection of capabilities needed to bring that free-market like effectiveness to the entire social impact sector – a markets mechanism we are calling Societal Markets.. a la Capital Markets, which will help magnify the impact per dollar per societal project.</p>
+    <p style="text-align: left; font: 1.25em calibri light;"> SangamX is created  as a platform that brings together a collection of capabilities needed to bring that free-market like effectiveness to the entire social impact sector – a markets mechanism we are calling Societal Markets.. a la Capital Markets, which will help magnify the impact per dollar per societal project.</p>
     
-    <p style="text-align: left;">
+    <p style="text-align: left;font: 1.25em calibri light;">
       Working in  tandem with a Social Stock Exchange, our Societal Markets Framework creates a collection of capabilities needed to bring the societal free markets mechanism to life – some of these will be owned and operated by SangamX, while some will be owned/ operated by partners.
 
      We will leverage and connect existing mechanisms such as Social Stock Exchanges, match-making platforms, crowd-funding platforms etc.
       
-      In doing so, we will role model a socially responsible AND financially sustainable organization, which establishes that financial return is only a means to create social returns, never the other way.<p style="text-align: left;">We will leverage and connect existing mechanisms such as Social Stock Exchanges, match-making platforms, crowd-funding platforms etc.
+      In doing so, we will role model a socially responsible AND financially sustainable organization, which establishes that financial return is only a means to create social returns, never the other way.<p style="text-align: left;font: 1.25em calibri light;">We will leverage and connect existing mechanisms such as Social Stock Exchanges, match-making platforms, crowd-funding platforms etc.
 
         Where the capabilities don’t exist, we will build to fill the gaps
         
         In doing so, we will role model a socially responsible AND financially sustainable organization, which establishes that financial return is only a means to create social returns, never the other way.</p>
     </p>
+   
 
+
+  </section style="padding-left: 8px; padding-right: 8px; background-color: rgb(220,220,220);">    
+
+    <!-- <hr  style="width:60%;margin: auto; border-top:2px solid #717171;"> -->
   <!-- Grid -->
+  <section style="background-color: rgb(241,241,241);">
   <div class="w3-row-padding" id="about">
     <div class="w3-center w3-padding-64">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Team</span>
     </div>
-
-    <div class="w3-third w3-margin-bottom">
+<section></section>
+    <div class="w3-third w3-margin-bottom" style="padding: 38px;">
       <div class="w3-card-4">
-        <img src="images/asm.png" alt="Antony Stephen" style="width:100%">
-        <div class="w3-container">
-          <h3>Antony Stephen</h3>
-          <p class="w3-opacity"style="width: 202.66px; height: 22.5px">Advisor
+        <img src="images/asm.png" alt="Antony Stephen" style="width:100% ">
+        <div class="w3-container"style="background-color: rgb(220,220,220);">
+          <h3 style="font: 1.25em calibri light;">Antony Stephen</h3>
+          <p class="w3-opacity"style="width: 202.66px; height: 22.5px;font: 1.25em calibri light;">Advisor
           </p>
-          <p style="text-align: left;">Antony is currently working as the CEO of Barclays Partner Finance and prior to this, he was the CEO for Amazon’s European Payments business.<br> In his 25 plus years of global experience in the Financial Services industry, he has worked for large organizations such as at JP Morgan Chase, Capital One, MasterCard and Citibank.<br><br>
+          <p style="text-align: left;font: 1.25em calibri light;">Antony is currently working as the CEO of Barclays Partner Finance and prior to this, he was the CEO for Amazon’s European Payments business.<br> In his 25 plus years of global experience in the Financial Services industry, he has worked for large organizations such as at JP Morgan Chase, Capital One, MasterCard and Citibank.<br><br>
 
             Antony has been committed to social causes especially involving children’s wellbeing and education for the past three decades.<br> During this time, Antony and his family have built a school, an orphanage and have established multiple educational trusts to sponsor education for the underprivileged children.</p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          <p style="font: 1.25em calibri light;"><button class="w3-button w3-light-grey w3-block">Contact</button></p>
         </div>
       </div>
     </div>
 
-    <div class="w3-third w3-margin-bottom">
+    <div class="w3-third w3-margin-bottom"style="padding: 38px;">
       <div class="w3-card-4">
         <img src="images/btm.jpg" alt="Babu Thiagarajan" style="width:100%">
-        <div class="w3-container">
-          <h3>Babu Thiagarajan
+        <div class="w3-container" style="background-color: rgb(220,220,220);">
+          <h3 style="font: 1.25em calibri light;">Babu Thiagarajan
           </h3>
-          <p class="w3-opacity">Founder Director
+          <p class="w3-opacity" style="font: 1.25em calibri light;">Founder Director
           </p>
-          <p style="text-align: left;">Babu has been in the Technology industry for nearly 28 years now playing a variety of roles to build technology led businesses, or delivering technology platforms and solutions for Banking and Financial Services organisations such as Fidelity, Standard Chartered etc. Based in Gurgaon, Babu is currently the Global Head of Technology for a collection of Post-Trade processing platforms at OSTTRA. 
-
+          <p style="text-align: left;font: 1.25em calibri light;">Babu has been in the Technology industry for nearly 28 years now playing a variety of roles to build technology led businesses, or delivering technology platforms and solutions for Banking and Financial Services organisations such as Fidelity, Standard Chartered etc. Based in Gurgaon, Babu is currently the Global Head of Technology for a collection of Post-Trade processing platforms at OSTTRA. 
+<br><br>
             Babu’s engagement in the social sector is inspired by the impact created by his grand-father and father’s efforts in their communities. He has spent the last 2 years studying and curating mechanisms that could make a material shift to solving societies problems.
             </p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          <p style="color: white;font: 1.25em calibri light;"><button class="w3-button w3-light-grey w3-block" style="background-color: rgb(255, 248, 248); color: #fffefe;">Contact</button></p>
         </div>
       </div>
     </div>
 
-    <div class="w3-third w3-margin-bottom">
+    <div class="w3-third w3-margin-bottom"style="padding: 38px;">
       <div class="w3-card-4">
         <img src="images/sbm.jpg" alt="Susheyl Balabaskaran
         " style="width:100%">
-        <div class="w3-container" >
-          <h3 style="width: 252.66; text-align: left;">Susheyl Balabaskaran
+        <div class="w3-container"style="background-color: rgb(220,220,220);" >
+          <h3 style="width: 252.66; text-align: left; font: 1.25em calibri light;">Susheyl Balabaskaran
           </h3>
-          <p class="w3-opacity">Founder Director</p>
-          <p style="text-align: left;">A business leader with over 27 years of experience in the automotive industry. After helping build the strategic purchasing, supply chain teams for entities across Asia, Susheyl moved to Germany in 2018 and is currently the Global Head-Advanced Supply Chain group for Visteon Corp. 
+          <p class="w3-opacity" style="font: 1.25em calibri light;">Founder Director</p>
+          <p style="text-align: left;font: 1.25em calibri light;">A business leader with over 27 years of experience in the automotive industry. After helping build the strategic purchasing, supply chain teams for entities across Asia, Susheyl moved to Germany in 2018 and is currently the Global Head-Advanced Supply Chain group for Visteon Corp. 
             He has been engaged in social causes for over a decade in supporting education for underprivileged children, on-the-ground volunteering during the Chennai floods and more recently raised funds to design, manufacture and distribute over 1000+ face shields to remote villages in South India. Over the last 2 years, he has been actively researching and mobilizing resources to build a sustainable platform that can be an enabler to multiply social impact. 
             </p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+          <p style="font: 1.25em calibri light;"><button class="w3-button w3-light-grey w3-block" >Contact</button></p>
         </div>
       </div>
     </div>
   </div>
-  <br><br><br>
   
+</section>
 
-  
+<!-- <hr  style="width:60%;margin: auto; border-top:2px solid #717171;"><br><br> -->
+
 <!--Knowledge base-->
 
- <!-- The Band Section --> 
+ 
 <!-- <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contact"> -->
-  <div style="text-align: left; height: 400px;"  id="contact"  >
-  <div   style=" border-style: outset; " >
-    <br><br>
-  <h2 style="text-align: center;">Knowledge Base:</h2> <br><br>
-  <ol style="text-align: left;">
-    <li>SSG Technical Group Report</li>
-    <li>SDG Progress Report</li>
-    <li>HBR – A New Approach to Funding Social Enterprises</li>
-    <li>The Role of Market Mechanism in Enhancing Human Development</li>
-  </ol>
+  <div style="text-align: center; height: 400px; width: 100%; background-color: rgb(220,220,220); padding: 45px;"  id="contact"  >
+  <!-- <div   style=" border-style: outset; " > -->
+   
+  <h2 style="text-align: center; 2em segoe UI; font-weight: 500px;">Knowledge Base:</h2> <br><br>
+  <ul style="text-align:center;">
+    <a href="https://www.sebi.gov.in/reports-and-statistics/reports/may-2021/technical-group-report-on-social-stock-exchange_50071.html"><u style="color: blue"><p style="font: 1.25em calibri light; color: blue;">SSG Technical Group Report</p> </a>
+    <a href="https://unstats.un.org/sdgs/report/2022/"><p style="font: 1.25em calibri light;">SDG Progress Report</p></a>
+    <a href="https://hbr.org/2012/01/a-new-approach-to-funding-social-enterprises"><p style="font: 1.25em calibri light;">HBR – A New Approach to Funding Social Enterprises</p></a>
+    <a href="https://www.researchgate.net/publication/324124539_The_Role_of_Market_Mechanism_in_Enhancing_Human_Development_A_Review_of_Amartya_Sen's_Argument_for_Free_Market"><p style="font: 1.25em calibri light;">The Role of Market Mechanism in Enhancing Human Development</p></u></a>
+  </ul>
     </div></div>
   
 
-
-
-
-    <!-- Contact -->
-    <br><br><br>
-
-    <div style="text-align: left;"  id="new"  >
-      
-    <h2 style="text-align: center; border: 2px solid black;background-color: rgb(77, 80, 82);">Contact Us:</h2> 
     
+<!-- 
+    <hr  style="width:60%;margin: auto; border-top:2px solid #717171;"> -->
+    <!-- Contact -->
+    
+<section style="background-color:rgb(158,158,158) ;">
+    <div style="text-align: left; padding: 45px;"  id="new"  >
+      <br>
+    <h2 style="text-align: center; background-color: rgb(158,158,158);font: 2em segoe UI; font-weight: 500px;">Contact Us :</h2> 
     <p style="text-align: left;">
-      <p>If you want to partner :
+      <p style="font: 1.25em calibri light;">If you want to partner :
 
         <br>
         <br>
+      
+        
+             <p style="font: 1.25em calibri light;">If you want our services :</p>
         <br>
         
-              If you want our services :
-        <br>
-        <br>
-        <br>
-              
-              If you need information :
-              
+              <p style="font: 1.25em calibri light;">If you need information :</p>
               
         <br>
-        <br>
-        <br>
+        
+      
               
         </p>
     </p>
@@ -409,7 +420,7 @@ class="w3-content"
 <div style="display:flex; width: 100%; justify-content: center;">
  <a href="#" class="w3-button w3-black w3-margin" style="text-align: ;center"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </div>
-
+</section>
 
 
 <script>
